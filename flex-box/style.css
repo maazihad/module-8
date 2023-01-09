@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  border: 5px dotted purple;
+  margin: 20px;
+  height: 300px;
+  display: flex;
+  /* align-items: stretch; */
+  flex-wrap: wrap;
+}
+.box {
+  width: 100px;
+  /* height: 100px; */
+  border: 2px solid peru;
+  font-size: large;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  margin: 10px;
+  align
+}
+#box-2 {
+  flex-grow: 1;
+}
