@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 2px;
+  justify-content: center;
+  /* align-content: center; */
+  justify-items: center;
+ 
+}
+
+.items {
+  height: 150px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.grid > div:nth-child(1n) {
+  background-color: #3498db;
+}
+.grid > div:nth-child(2n) {
+  background-color: #f1c40f;
+}
+.grid > div:nth-child(3n) {
+  background-color: #d35400;
+}
