@@ -1,0 +1,46 @@
+*,
+::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  padding: 30px;
+  background-color: #ffeaa7;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 30px repeat(6, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.date,
+.day {
+  cursor: pointer;
+  background-color: #81ecec;
+
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.day-2 {
+  background-color: black;
+  color: white;
+}
+.other-month {
+  background-color: #00b894;
+}
+/* .date:hover {
+  background-color: #ffeaa7;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+} */
